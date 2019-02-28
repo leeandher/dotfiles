@@ -1,6 +1,6 @@
 {
   "workbench.statusBar.feedback.visible": false,
-  "git.confirmSync": false,
+  "git.confirmSync": true,
   "git.enableSmartCommit": true,
   "window.zoomLevel": 0,
   "workbench.startupEditor": "newUntitledFile",
