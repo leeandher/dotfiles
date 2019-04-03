@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1701px" height="1701px" viewBox="0 0 1701 1701" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>leander.xyz logo w/ circle background</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Tilted" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Logo" transform="translate(850.298916, 850.298916) rotate(45.000000) translate(-850.298916, -850.298916) translate(-932.701084, -932.701084)">
+            <circle id="bg-circle" fill="#0F0F0F" cx="1783" cy="1783" r="850"></circle>
+            <polygon id="r-path" fill="#FEFEFE" points="1583 1283 1583 1980.6 1783.5 1980.6 1783 1483 2083 1483 2083 1683 1883 1683 1883 1883 2283 2283 2283 2000.56 2163 1883 2283 1883 2283 1283"></polygon>
+            <polygon id="l-path" fill="#4DCCB0" points="1283 1283 1283 2283 2283 2283 2083 2082.8 1483 2082.8 1482.1992 1283"></polygon>
+        </g>
+    </g>
+</svg>
