@@ -1,6 +1,6 @@
 # Apps
 
-This directory contains a list of applications that follow me no matter what type of computer I'm on.
+This directory contains a list of applications that follow me no matter what type of computer I'm on. For OS Specific software view the other files in this directory.
 
 ## Code
 

@@ -11,7 +11,3 @@ The hierarchy of my current choice of fonts to use. If they aren't in this repo,
 
 - [Space Mono](https://fonts.google.com/specimen/Space+Mono)
 - [Fira Code](https://github.com/tonsky/FiraCode)
-
-## Other
-
-- []
