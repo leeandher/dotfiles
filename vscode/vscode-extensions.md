@@ -5,25 +5,26 @@ Listing off the extensions via `code --list-extensions` yields:
 ```
 alefragnani.project-manager
 christian-kohler.path-intellisense
+CoenraadS.bracket-pair-colorizer-2
+cssho.vscode-svgviewer
 dbaeumer.vscode-eslint
-dracula-theme.theme-dracula
+dsznajder.es7-react-js-snippets
+dzannotti.vscode-babel-coloring
 eamodio.gitlens
 esbenp.prettier-vscode
 jpoissonnier.vscode-styled-components
+ms-azuretools.vscode-docker
+ms-python.python
 ms-vscode.vscode-typescript-tslint-plugin
 naumovs.color-highlight
 PKief.material-icon-theme
 pnp.polacode
-tinkertrain.theme-panda
+teabyii.ayu
 yzhang.markdown-all-in-one
+ziyasal.vscode-open-in-github
 ```
 
 Use `code --install-extension $author.$extension` using the above.
 
-To install all of them, copy paste the following batch install script.
-
-Take a look at [this](https://gist.github.com/mdschweda/2311e3f2c7062bf7367e44f8a7aa8b55).
-
-```bash
-code --install-extension alefragnani.project-manager christian-kohler.path-intellisense
-```
+Install all these extensions using the `install-extensions.sh` script.
+Uninstall every existing extension with the `uninstall-extensions.sh` script.

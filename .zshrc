@@ -4,6 +4,8 @@ alias refresh="source ~/.zshrc"
 alias trash="rm -r"
 alias gc="gitmoji -c"
 alias ghardcore="git commit --amend && git push -f --no-verify"
+alias penv="source .venv/bin/activate"
+alias whport='f() { lsof -i tcp:$1 };f'
 
 # NVM
 export NVM_DIR=~/.nvm

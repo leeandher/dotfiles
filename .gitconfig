@@ -3,10 +3,11 @@
 	email = me@leander.xyz
 
 [alias]
-  am = commit --amend
-  cb = checkout -b
+	am = commit --amend
+	amn = commit --amend --no-edit
+	cb = checkout -b
 	lg = log --color --graph --pretty=format:'%C(red)%h%Creset -%C(yellow)%d%Creset %s %C(green)(%ad) %C(bold blue)<%an>%Creset' --abbrev-commit --date=format:'%b %d, %Y'
-  ls = branch
+	ls = branch
 	la = !git config -l | grep alias | cut -c 7-
 	stash-rename = "!_() { rev=$(git rev-parse stash@{$1}) && git stash drop stash@{$1}|| exit 1 ; git stash store -m \"$2\" $rev; };_"
   
