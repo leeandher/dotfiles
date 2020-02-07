@@ -1,0 +1,68 @@
+{
+  // Misc
+  "window.zoomLevel": 0,
+  "breadcrumbs.enabled": true,
+  "extensions.ignoreRecommendations": true,
+  // Git
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  // Emmet
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  // Editors
+  "editor.formatOnSave": true,
+  // "editor.renderControlCharacters": false,
+  "editor.minimap.enabled": true,
+  "editor.mouseWheelZoom": true,
+  "editor.colorDecorators": true,
+  "editor.fontLigatures": true,
+  "editor.glyphMargin": false,
+  "editor.fontWeight": "600",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+  "editor.lineHeight": 28,
+  "editor.fontFamily": "'Iosevka', 'Fira Code', 'Office Code Pro', Consolas, 'Courier New', monospace",
+  "editor.fontSize": 16,
+  // Markdown All-in-One
+  "markdown.extension.italic.indicator": "_",
+  "[markdown]": {
+    "editor.wordWrap": "on"
+  },
+  // MUI Icon Theme
+  "material-icon-theme.hidesExplorerArrows": true,
+  // Explorer
+  "explorer.confirmDragAndDrop": true,
+  "explorer.confirmDelete": true,
+  // ESLint
+  "eslint.autoFixOnSave": true,
+  "prettier.disableLanguages": ["vue"],
+  // Workbench
+  "workbench.startupEditor": "none",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.colorTheme": "Ayu Mirage Bordered",
+  "workbench.editor.focusRecentEditorAfterClose": false,
+  // Window
+  "window.menuBarVisibility": "toggle",
+  // Language Specific
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.tabSize": 2
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+  // Unsorted Rules
+}
