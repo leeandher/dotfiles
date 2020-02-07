@@ -1,20 +1,24 @@
 {
-  "workbench.statusBar.feedback.visible": false,
-  "git.confirmSync": true,
-  "git.enableSmartCommit": true,
+  // Misc
   "window.zoomLevel": 0,
-  "workbench.startupEditor": "newUntitledFile",
-  "editor.formatOnSave": true,
+  "breadcrumbs.enabled": true,
+  "extensions.ignoreRecommendations": true,
+  // Git
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  // Emmet
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
-  "breadcrumbs.enabled": false,
-  "editor.tabSize": 2,
-  "editor.renderControlCharacters": false,
+  // Editors
+  "editor.formatOnSave": true,
+  // "editor.renderControlCharacters": false,
   "editor.minimap.enabled": true,
   "editor.mouseWheelZoom": false,
   "editor.colorDecorators": true,
   "editor.fontLigatures": true,
+  "editor.glyphMargin": false,
+  "editor.fontWeight": "600",
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
@@ -25,39 +29,42 @@
       }
     ]
   },
-  "editor.fontSize": 14,
-  "editor.lineHeight": 25,
-  "editor.fontFamily": "Iosevka, 'Fira Code', 'Office Code Pro', Menlo, Consolas, 'Courier New', monospace",
-  "explorer.confirmDragAndDrop": false,
-  "explorer.confirmDelete": false,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "prettier.disableLanguages": ["vue"],
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorCustomizations": {
-    "activityBarBadge.background": "#ffcc66",
-    "list.activeSelectionForeground": "#ffcc66",
-    "list.inactiveSelectionForeground": "#ffcc66",
-    "list.highlightForeground": "#ffcc66",
-    "scrollbarSlider.activeBackground": "#ffcc6650",
-    "editorSuggestWidget.highlightForeground": "#ffcc66",
-    "textLink.foreground": "#ffcc66",
-    "progressBar.background": "#ffcc66",
-    "pickerGroup.foreground": "#ffcc66",
-    "tab.activeBorder": "#ffcc66",
-    "notificationLink.foreground": "#ffcc66",
-    "editorWidget.resizeBorder": "#ffcc66",
-    "editorWidget.border": "#ffcc66",
-    "settings.modifiedItemIndicator": "#ffcc66",
-    "settings.headerForeground": "#ffcc66",
-    "panelTitle.activeBorder": "#ffcc66",
-    "breadcrumb.activeSelectionForeground": "#ffcc66",
-    "menu.selectionForeground": "#ffcc66",
-    "menubar.selectionForeground": "#ffcc66"
+  "editor.lineHeight": 28,
+  "editor.fontFamily": "Iosevka, 'Fira Code', 'Office Code Pro', Consolas, 'Courier New', monospace",
+  "editor.fontSize": 16,
+  // Markdown All-in-One
+  "markdown.extension.italic.indicator": "_",
+  "[markdown]": {
+    "editor.wordWrap": "on"
   },
+  // MUI Icon Theme
   "material-icon-theme.hidesExplorerArrows": true,
-  "editor.glyphMargin": false,
+  // Explorer
+  "explorer.confirmDragAndDrop": true,
+  "explorer.confirmDelete": true,
+  // ESLint
+  "eslint.autoFixOnSave": true,
+  "prettier.disableLanguages": ["vue"],
+  // Workbench
+  "workbench.startupEditor": "none",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.tree.renderIndentGuides": "none",
   "workbench.colorTheme": "Ayu Mirage Bordered",
-  "extensions.ignoreRecommendations": true,
+  "workbench.editor.focusRecentEditorAfterClose": false,
+  // Window
+  "window.menuBarVisibility": "toggle",
+  // Language Specific
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.tabSize": 2
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
   "python.formatting.blackPath": "/Users/leanderrodrigues/.cache/pre-commit/repoz5U9ft/py_env-python3/bin/black",
   "python.formatting.provider": "black"
+  // Unsorted Rules
 }
