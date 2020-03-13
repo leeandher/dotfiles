@@ -1,5 +1,5 @@
 # leeandher.zsh-theme
-PROMPT='[$fg[cyan]%n$reset_color@$fg[blue]%m$reset_color:$fg[magenta]%~$reset_color] $(git_prompt_info)
+PROMPT='[$fg[cyan]%n$reset_color@$fg[blue]%m$reset_color:$fg[magenta]%~$reset_color$(git_prompt_info)]
 👉 '
 
 function git_prompt_info() {
@@ -11,7 +11,7 @@ function git_prompt_info() {
    fi
 }
 
-ZSH_THEME_GIT_PROMPT_PREFIX="("
-ZSH_THEME_GIT_PROMPT_SUFFIX="$reset_color)"
+ZSH_THEME_GIT_PROMPT_PREFIX=" on "
+ZSH_THEME_GIT_PROMPT_SUFFIX="$reset_color"
 ZSH_THEME_GIT_PROMPT_CLEAN="$fg[green]"
 ZSH_THEME_GIT_PROMPT_DIRTY="$fg[red]"
