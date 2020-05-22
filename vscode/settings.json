@@ -30,8 +30,11 @@
     ]
   },
   "editor.lineHeight": 28,
-  "editor.fontFamily": "Iosevka, 'Fira Code', 'Office Code Pro', Consolas, 'Courier New', monospace",
+  "editor.fontFamily": "Iosevka, 'Fira Code', 'Office Code Pro', Monoco, Consolas, 'Courier New', monospace",
   "editor.fontSize": 16,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
   // Markdown All-in-One
   "markdown.extension.italic.indicator": "_",
   "[markdown]": {
@@ -43,7 +46,6 @@
   "explorer.confirmDragAndDrop": true,
   "explorer.confirmDelete": true,
   // ESLint
-  "eslint.autoFixOnSave": true,
   "prettier.disableLanguages": ["vue"],
   // Workbench
   "workbench.startupEditor": "none",
@@ -60,11 +62,5 @@
   "[javascript]": {
     "editor.tabSize": 2
   },
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  "python.formatting.blackPath": "/Users/leanderrodrigues/.cache/pre-commit/repoz5U9ft/py_env-python3/bin/black",
-  "python.formatting.provider": "black"
-  // Unsorted Rules
+  "javascript.updateImportsOnFileMove.enabled": "always"
 }
