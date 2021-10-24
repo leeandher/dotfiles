@@ -1,6 +1,4 @@
 {
-  // Misc
-  "window.zoomLevel": 0,
   "breadcrumbs.enabled": true,
   "extensions.ignoreRecommendations": true,
   // Git
@@ -10,15 +8,17 @@
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
-  // Editors
-  "editor.formatOnSave": true,
-  // "editor.renderControlCharacters": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.renderControlCharacters": false,
   "editor.minimap.enabled": true,
   "editor.mouseWheelZoom": false,
   "editor.colorDecorators": true,
+  "editor.formatOnSave": true,
   "editor.fontLigatures": true,
   "editor.glyphMargin": false,
-  "editor.fontWeight": "600",
+  "editor.fontWeight": "bold",
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
@@ -30,11 +30,9 @@
     ]
   },
   "editor.lineHeight": 28,
-  "editor.fontFamily": "Iosevka, 'Fira Code', 'Office Code Pro', Monoco, Consolas, 'Courier New', monospace",
+  "editor.fontFamily": "'Dank Mono', Iosevka, 'Fira Code', 'Office Code Pro', Monoco, Consolas, 'Courier New', monospace",
   "editor.fontSize": 16,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
+  "editor.tabSize": 2,
   // Markdown All-in-One
   "markdown.extension.italic.indicator": "_",
   "[markdown]": {
@@ -44,23 +42,33 @@
   "material-icon-theme.hidesExplorerArrows": true,
   // Explorer
   "explorer.confirmDragAndDrop": true,
-  "explorer.confirmDelete": true,
-  // ESLint
-  "prettier.disableLanguages": ["vue"],
+  "explorer.confirmDelete": false,
+  // Security
+  "security.workspace.trust.untrustedFiles": "open",
   // Workbench
   "workbench.startupEditor": "none",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.tree.renderIndentGuides": "none",
-  "workbench.colorTheme": "Ayu Mirage Bordered",
   "workbench.editor.focusRecentEditorAfterClose": false,
-  // Window
-  "window.menuBarVisibility": "toggle",
+  "workbench.fontAliasing": "antialiased",
+  "workbench.colorTheme": "Unofficial Sentry Theme",
   // Language Specific
+  "css.lint.unknownAtRules": "ignore",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
-    "editor.tabSize": 2
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "javascript.updateImportsOnFileMove.enabled": "always"
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
