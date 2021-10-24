@@ -1,0 +1,9 @@
+[character]
+# success_symbol = "[❯](bold white)"
+# error_symbol = "[❯](bold white)"
+
+[nodejs]
+symbol = "🌱 "
+
+[git_status]
+style = "bold purple"
