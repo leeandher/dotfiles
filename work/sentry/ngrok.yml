@@ -1,0 +1,29 @@
+version: "2"
+authtoken: 
+console_ui_color: transparent
+tunnels:
+    sentry:
+        proto: http
+        hostname: leeandher.ngrok.io
+        addr: 8000
+    hc-control:
+        proto: http
+        hostname: control-leeandher.ngrok.io
+        addr: 8000
+    hc-region:
+        proto: http
+        hostname: region-leeandher.ngrok.io
+        addr: 8002
+
+    # ipe-frontend:
+    #     proto: http
+    #     hostname: frontend-leeandher.ngrok.io
+    #     addr: 3000
+    # ipe-py:
+    #     proto: http
+    #     hostname: backend-py-leeandher.ngrok.io
+    #     addr: 5100
+    # ipe-ts:
+    #     proto: http
+    #     hostname: backend-ts-leeandher.ngrok.io
+    #     addr: 5200

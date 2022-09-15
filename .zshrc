@@ -1,5 +1,3 @@
-
-
 # Character Encoding
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
@@ -34,13 +32,16 @@ alias penv="source .venv/bin/activate"
 alias whport='f() { lsof -i tcp:$1 };f'
 
 # Sentry-specific aliases
+alias sd_c="SENTRY_SILO_MODE=CONTROL sentry devserver"
+alias sd_r="SENTRY_DEVSERVER_BIND=localhost:8002 SENTRY_SILO_MODE=REGION sentry devserver"
 alias sd="sentry devserver"
-alias sdw="sentry devserver --workers"
+alias sdw="sentry devserver --workers "
 alias sdu="sentry devservices up"
 alias sdd="sentry devservices down"
-
-# Allow autocomplete for git branches
-autoload -Uz compinit && compinit
+alias gsd="getsentry devserver"
+alias gsdw="getsentry devserver --workers"
+alias gsdu="getsentry devservices up"
+alias gsdd="getsentry devservices down"
 
 # Constants
 export GPG_TTY=$(tty)
@@ -50,3 +51,6 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 # Evals
 eval "$(starship init zsh)"
 eval "$(direnv hook zsh)"
+
+# Allow autocomplete for git branches
+autoload -Uz compinit && compinit
