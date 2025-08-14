@@ -1,0 +1,96 @@
+{
+  "breadcrumbs.enabled": true,
+  "extensions.ignoreRecommendations": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "editor.renderControlCharacters": false,
+  "editor.minimap.enabled": true,
+  "editor.mouseWheelZoom": false,
+  "editor.colorDecorators": true,
+  "editor.fontLigatures": true,
+  "editor.glyphMargin": false,
+  "editor.fontWeight": "bold",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+  "editor.lineHeight": 28,
+  "editor.fontFamily": "'Dank Mono', Iosevka, 'Fira Code', 'Office Code Pro', Monoco, Consolas, 'Courier New', monospace",
+  "editor.fontSize": 16,
+  "editor.rulers": [100],
+  "markdown.extension.italic.indicator": "_",
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "material-icon-theme.hidesExplorerArrows": true,
+  "explorer.confirmDragAndDrop": true,
+  "explorer.confirmDelete": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "workbench.startupEditor": "none",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.editor.focusRecentEditorAfterClose": false,
+  "workbench.fontAliasing": "antialiased",
+  "workbench.colorTheme": "Unofficial Sentry Theme",
+  "css.lint.unknownAtRules": "ignore",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "python.testing.autoTestDiscoverOnSaveEnabled": false,
+  "eslint.alwaysShowStatus": true,
+  "redhat.telemetry.enabled": false,
+  "editor.inlineSuggest.enabled": true,
+  "files.exclude": {
+    "**/__pycache__": true
+  },
+  "markdown.extension.tableFormatter.enabled": false,
+  "settingsSync.ignoredSettings": ["workbench.colorTheme", "editor.fontFamily"],
+  "workbench.activityBar.orientation": "vertical",
+  "[python]": {
+    "editor.formatOnType": true,
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "git.openRepositoryInParentFolders": "never",
+  "gitlens.advanced.messages": {
+    "suppressLineUncommittedWarning": true
+  },
+  "workbench.editor.splitInGroupLayout": "vertical",
+  "editor.formatOnSave": true,
+  "python.defaultInterpreterPath": "/Users/leander/dev/sentry/.venv",
+  "editor.stickyScroll.enabled": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "git.path": "/usr/bin/git",
+  "diffEditor.renderSideBySide": true,
+  "workbench.editor.labelFormat": "short",
+  "cSpell.userWords": ["renderable", "renderables", "testutils"]
+}
