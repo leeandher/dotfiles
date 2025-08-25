@@ -1,0 +1,126 @@
+# While a lot of configuration in Sentry can be changed via the UI, for all
+# new-style config (as of 8.0) you can also declare values here in this file
+# to enforce defaults or to ensure they cannot be changed via the UI. For more
+# information see the Sentry documentation.
+
+###############
+# Mail Server #
+###############
+
+mail.backend: 'console'  # Use dummy if you want to disable email entirely
+# mail.host: 'localhost'
+# mail.port: 25
+# mail.username: ''
+# mail.password: ''
+# mail.use-tls: false
+# mail.use-ssl: false
+# The email address to send on behalf of
+# mail.from: 'root@localhost'
+
+# If you'd like to configure email replies, enable this.
+# mail.enable-replies: false
+
+# When email-replies are enabled, this value is used in the Reply-To header
+# mail.reply-hostname: ''
+
+# If you're using mailgun for inbound mail, set your API key and configure a
+# route to forward to /api/hooks/mailgun/inbound/
+# mail.mailgun-api-key: ''
+
+###################
+# System Settings #
+###################
+
+# If this file ever becomes compromised, it's important to regenerate your a new key
+# Changing this value will result in all current sessions being invalidated.
+# A new key can be generated with `$ sentry config generate-secret-key`
+system.secret-key: '<INSERT_SENTRY_SECRET_KEY>'
+
+# The ``redis.clusters`` setting is used, unsurprisingly, to configure Redis
+# clusters. These clusters can be then referred to by name when configuring
+# backends such as the cache, digests, or TSDB backend.
+#
+# Two types of clusters are currently supported:
+#
+#   rb.Cluster
+#   A redis blaster cluster is the traditional cluster used by most services
+#   within sentry. This is the default type cluster type.
+#
+#   rediscluster.StrictRedisCluster
+#   An official Redis Cluster can be configured by marking the named group with
+#   the ``is_redis_cluster: True`` flag. In future versions of Sentry more
+#   services will require this type of cluster.
+#
+redis.clusters:
+  default:
+    hosts:
+      0:
+        host: 127.0.0.1
+        port: 6379
+  rc-default:
+    is_redis_cluster: true
+    hosts:
+      - host: 127.0.0.1
+        port: 7000
+      - host: 127.0.0.1
+        port: 7001
+      - host: 127.0.0.1
+        port: 7002
+      - host: 127.0.0.1
+        port: 7003
+      - host: 127.0.0.1
+        port: 7004
+      - host: 127.0.0.1
+        port: 7005
+
+################
+# File storage #
+################
+
+# Uploaded media uses these `filestore` settings. The available
+# backends are: `filesystem`, `gcs`, and `s3`.
+
+filestore.backend: 'filesystem'
+filestore.options:
+  location: '/tmp/sentry-files'
+filestore.relocation-backend: 'filesystem'
+filestore.relocation-options:
+  location: '/tmp/sentry-relocation-files'
+filestore.profiles-backend: 'filesystem'
+filestore.profiles-options:
+  location: '/tmp/sentry-profiles'
+  allow_overwrite: true
+
+chart-rendering.enabled: true
+
+system.url-prefix: https://leeandher.ngrok.io
+system.base-hostname: leeandher.ngrok.io
+system.region-api-url-template: https://{region}.leeandher.ngrok.io
+
+auth-google.client-id: ''
+auth-google.client-secret: ''
+
+slack.client-id: ''
+slack.client-secret: ''
+slack.signing-secret: ''
+
+discord.application-id: ''
+discord.public-key: ''
+discord.client-secret: ''
+discord.bot-token: ''
+
+pagerduty.app-id: ''
+
+notion.integration-token: ''
+statuspage.api-key: ''
+
+vercel.client-id: ''
+vercel.client-secret: ''
+vercel.integration-slug: ''
+
+github-app.id: ''
+github-app.name: ''
+github-app.client-id: ''
+github-app.client-secret: ''
+github-app.webhook-secret: ''
+github-app.private-key: ''
