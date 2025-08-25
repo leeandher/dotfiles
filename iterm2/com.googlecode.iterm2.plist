@@ -1635,7 +1635,7 @@
 	<key>SplitPaneDimmingAmount</key>
 	<real>0.39557863253991582</real>
 	<key>StatusBarIcon</key>
-	<true/>
+	<false/>
 	<key>StatusBarPosition</key>
 	<integer>0</integer>
 	<key>StretchTabsToFillBar</key>

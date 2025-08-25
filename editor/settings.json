@@ -41,7 +41,6 @@
   "workbench.tree.renderIndentGuides": "none",
   "workbench.editor.focusRecentEditorAfterClose": false,
   "workbench.fontAliasing": "antialiased",
-  "workbench.colorTheme": "Unofficial Sentry Theme",
   "css.lint.unknownAtRules": "ignore",
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -92,5 +91,7 @@
   "git.path": "/usr/bin/git",
   "diffEditor.renderSideBySide": true,
   "workbench.editor.labelFormat": "short",
-  "cSpell.userWords": ["renderable", "renderables", "testutils"]
+  "cSpell.userWords": ["renderable", "renderables", "testutils"],
+  "extensions.gallery.serviceUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",
+  "workbench.colorTheme": "Sentinel Dark"
 }

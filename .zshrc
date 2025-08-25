@@ -32,21 +32,11 @@ alias penv="source .venv/bin/activate"
 alias whport='f() { lsof -i tcp:$1 };f'
 
 # Sentry-specific aliases
-alias sd_c="SENTRY_SILO_MODE=CONTROL sentry devserver"
-alias sd_r="SENTRY_DEVSERVER_BIND=localhost:8002 SENTRY_SILO_MODE=REGION sentry devserver"
-alias sd="sentry devserver"
-alias sdw="sentry devserver --workers "
-alias sdu="sentry devservices up"
-alias sdd="sentry devservices down"
-alias gsd="getsentry devserver"
-alias gsdw="getsentry devserver --workers"
-alias gsdu="getsentry devservices up"
-alias gsdd="getsentry devservices down"
-
-# Constants
-export GPG_TTY=$(tty)
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
+alias sd="devservices serve"
+alias sdu="devservices up"
+alias sdui="devservices up --mode=ingest"
+export SENTRY_POST_MERGE_AUTO_UPDATE=1
+export PATH="/Users/leander/.local/share/sentry-devenv/bin:$PATH"
 
 # Evals
 eval "$(starship init zsh)"
@@ -54,3 +44,16 @@ eval "$(direnv hook zsh)"
 
 # Allow autocomplete for git branches
 autoload -Uz compinit && compinit
+
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# pnpm
+export PNPM_HOME="/Users/leander/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+
