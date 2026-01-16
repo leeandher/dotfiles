@@ -2,7 +2,7 @@
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-# React Native Code Editor
+export EDITOR=code
 export REACT_EDITOR=code
 
 # Uncomment the following line to change how often to auto-update (in days).
@@ -23,11 +23,12 @@ HIST_STAMPS="yyyy-mm-dd"
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-alias edit="open ~/.zshrc"
+alias edit="cursor ~/.zshrc"
 alias refresh="source ~/.zshrc"
 alias gc="gitmoji -c"
 alias np="nodemon -e py -x"
 alias npt="nodemon -e py -x pytest"
+alias ept="ls **/*.py | entr -r pytest"
 alias penv="source .venv/bin/activate"
 alias whport='f() { lsof -i tcp:$1 };f'
 
@@ -35,8 +36,14 @@ alias whport='f() { lsof -i tcp:$1 };f'
 alias sd="devservices serve"
 alias sdu="devservices up"
 alias sdui="devservices up --mode=ingest"
+alias sdd="devservices down"
 export SENTRY_POST_MERGE_AUTO_UPDATE=1
 export PATH="/Users/leander/.local/share/sentry-devenv/bin:$PATH"
+go() {
+  open "https://go-app-base-url.com/$1"
+}
+alias redock-redis="docker rm -f redis-redis-1 && docker volume rm -f redis-redis-data"
+
 
 # Evals
 eval "$(starship init zsh)"
@@ -57,3 +64,11 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 
+export HOMEBREW_NO_AUTO_UPDATE=1
+export PATH="$HOME/.local/bin:$PATH"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/leander/Library/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/leander/Library/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/leander/Library/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/leander/Library/google-cloud-sdk/completion.zsh.inc'; fi
